@@ -25,10 +25,22 @@
     </style>
 </head>
 <body>
-    <h1>CSV Filter Application</h1>
+    <h1>アクティブ抽出ツール</h1>
     <input type="file" id="fileInput">
-    <button onclick="processFile()">Upload and Process</button>
-    <a id="downloadLink" style="display: none;">Download Filtered CSV</a>
-    <script src="script.js"></script>
+    <button onclick="processFile()">CSVファイルを処理</button>
+    <a id="downloadLink" style="display: none;">ダウンロード</a>
 </body>
+
+<body>
+    <h1>CSVファイルのid重複列のみ出力</h1>
+    <input type="file" id="fileInput1" accept=".csv">
+    <input type="file" id="fileInput2" accept=".csv">
+    <button onclick="processFiles2()">CSVファイルを処理</button>
+    <a id="downloadLink2" style="display:none;">ダウンロード</a>
+</body>
+
+<div id="log"></div> <!-- ログ表示枠 -->
+
+<script src="script.js"></script>
+
 </html>
